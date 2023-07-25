@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <link href="https://fonts.cdnfonts.com/css/glance-slab-test" rel="stylesheet">
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-69P721FCCG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-69P721FCCG');
+</script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>  
+$(function(){ 
+  $("#header").load("header.html");  
+  $("#footer").load("footer.html");  
+}); 
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { 
+      padding: 22px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  font-family: 'Glance Slab Test', sans-serif;
+}                                          
+</style>
+</head>
+<body>
+    
+  
+    <div id="header"></div>
+      
+
+    <center>
+        <span style="font-size: 36px;">
+            <span style="color:mediumvioletred;">𝛕巴ℒ∑𝜌å†Hiℂ</span>
+            <span style="color:limegreen;">𝜌S¥çhø</span>
+            <span style="color:violet;">åsiÅn</span>
+            <span style="color:deepskyblue;">𝞈åiƒµ</span>
+            <span style="color:indianred;">ßµ∂∂His†</span>
+            <span style="color:lightpink;">ƒ∑∂巴®å𝛕iøN™</span>
+        </span>
+        <br />
+        <br />
+
+
+        <span style="font-size: 32px;">
+            <a href="https://www.patreon.com/waifuworks">WaifuWorks LLC</a>
+            <br />
+            <a href="https://www.paypal.com/paypalme/tripbranch">
+                Clusterflux LLC
+            </a>
+            <br />
+            <a href="https://discord.gg/vv7nkCdcap">
+                Data Department Depot LLC
+            </a>
+            <br />
+        </span>
+        <hr style="width:75%;height:5px;border-width:0;color:white;background-color:white">
+    </center>
+    <br>
+    <br>
+
+  <body>
+    
+    <center>
+    <!-- Replace "test" with your own sandbox Business account app client ID -->
+    <script src="https://www.paypal.com/sdk/js?client-id=tAb72U_9t7Y7nmNevtQ9096D5jk8jHsQhLQcgNe26X9tfpi2MeCH2EGJoHXOA8VPDaQhxNmMQfN27C4ND
+                 &currency=USD"></script>
+    <!-- Set up a container element for the button -->
+    <div id="paypal-button-container"></div>
+    <script>
+      paypal.Buttons({
+        // Order is created on the server and the order id is returned
+        createOrder() {
+          return fetch("/my-server/create-paypal-order", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            // const FUNDING_SOURCES = [
+       //  paypal.FUNDING.PAYPAL,
+       //  paypal.FUNDING.VENMO,
+       //  paypal.FUNDING.CARD
+       //  paypal.FUNDING.SEPA	
+       //  paypal.FUNDING.BANCONTACT	
+       //  paypal.FUNDING.EPS	
+       //  paypal.FUNDING.GIROPAY	
+       //  paypal.FUNDING.IDEAL	
+       //  paypal.FUNDING.MERCADOPAGO	
+        // paypal.FUNDING.MYBANK	
+       //  paypal.FUNDING.P24	
+        // paypal.FUNDING.SOFORT
+            // use the "body" param to optionally pass additional order information
+            // like product skus and quantities
+            body: JSON.stringify({
+              cart: [
+                {
+                  sku: "πøπ",
+                  quantity: "1",
+                },
+              ],
+            }),
+          })
+          .then((response) => response.json())
+          .then((order) => order.id);
+        },
+        // Finalize the transaction on the server after payer approval
+        onApprove(data) {
+          return fetch("/my-server/capture-paypal-order", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              orderID: data.orderID
+            })
+          })
+          .then((response) => response.json())
+          .then((orderData) => {
+            // Successful capture! For dev/demo purposes:
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+            const transaction = orderData.purchase_units[0].payments.captures[0];
+            alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+            // When ready to go live, remove the alert and show a success message within this page. For example:
+            // const element = document.getElementById('paypal-button-container');
+            // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+            // Or go to another URL:  window.location.href = 'thank_you.html';
+          });
+        }
+      }).render('#paypal-button-container');
+    </script>
+    
+    <br>
+    <br>
+    <br>
+         
+         
+    
+    <img src="VRPORTFOLIO_300.png" alt="VRPORTFOLIO_300" style="width:250px;height:250px;">
+    
+    <br>
+    <br>
+    <br>
+    
+   <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1N8tsjIhcKnlPaBTVu34b5nD"
+  publishable-key="pk_live_51Mq6CXIhcKnlPaBTSfiomMvVh8alDVjJ3tvERt0hw2XPT113cRuiw8COKkgNMV7Ee2AtOdYo9hbCrUQNbiDISepQ00PoXtgGCu"
+>
+</stripe-buy-button>
+    
+     <br>
+    <br>
+    <br>
+    
+    <img src="IRLPortfolio 1600.png" alt="VIRLPortfolio 1600" style="width:250px;height:250px;">
+    
+     <br>
+    <br>
+    <br>
+    
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1MrVUuIhcKnlPaBTg2epdq1g"
+  publishable-key="pk_live_51Mq6CXIhcKnlPaBTSfiomMvVh8alDVjJ3tvERt0hw2XPT113cRuiw8COKkgNMV7Ee2AtOdYo9hbCrUQNbiDISepQ00PoXtgGCu"
+>
+</stripe-buy-button>
+    
+     <br>
+    <br>
+    <br>
+    
+    <img src="IRLSingle 82462.png" alt="IRLSingle 82462" style="width:250px;height:250px;">
+    
+     <br>
+    <br>
+    <br>
+    
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1MrVjDIhcKnlPaBTuhUSaer1"
+  publishable-key="pk_live_51Mq6CXIhcKnlPaBTSfiomMvVh8alDVjJ3tvERt0hw2XPT113cRuiw8COKkgNMV7Ee2AtOdYo9hbCrUQNbiDISepQ00PoXtgGCu"
+>
+</stripe-buy-button>
+    
+     <br>
+    <br>
+    <br>
+    
+    <img src="blue buddha shirt.png" alt="blue buddha shirt" style="width:250px;height:250px;">
+    
+     <br>
+    <br>
+    <br>
+    
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1MrVpyIhcKnlPaBTW7IGu6us"
+  publishable-key="pk_live_51Mq6CXIhcKnlPaBTSfiomMvVh8alDVjJ3tvERt0hw2XPT113cRuiw8COKkgNMV7Ee2AtOdYo9hbCrUQNbiDISepQ00PoXtgGCu"
+>
+</stripe-buy-button>
+    
+     <br>
+    <br>
+    <br>
+    
+    <img src="(- -) zzz Saga shirt.png" alt="(- -) zzz Saga shirt" style="width:250px;height:250px;">
+    
+     <br>
+    <br>
+    <br>
+    
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1MrVoHIhcKnlPaBTcbNfUmTg"
+  publishable-key="pk_live_51Mq6CXIhcKnlPaBTSfiomMvVh8alDVjJ3tvERt0hw2XPT113cRuiw8COKkgNMV7Ee2AtOdYo9hbCrUQNbiDISepQ00PoXtgGCu"
+>
+</stripe-buy-button>
+    
+     <br>
+    <br>
+    <br>
+    
+    <img src="(- -) zzz Saga Hattt.png" alt="(- -) zzz Saga Hattt" style="width:250px;height:250px;">
+    
+     <br>
+    <br>
+    <br>
+    
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1MrVg6IhcKnlPaBTkQguqcR4"
+  publishable-key="pk_live_51Mq6CXIhcKnlPaBTSfiomMvVh8alDVjJ3tvERt0hw2XPT113cRuiw8COKkgNMV7Ee2AtOdYo9hbCrUQNbiDISepQ00PoXtgGCu"
+>
+</stripe-buy-button>
+    
+     <br>
+    <br>
+    <br>
+    
+    <img src="(- -) zzz Saga Patchhh.png" alt="V(- -) zzz Saga Patchhh" style="width:250px;height:250px;">
+    
+     <br>
+    <br>
+    <br>
+    
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1MrVleIhcKnlPaBT7OpR5FkK"
+  publishable-key="pk_live_51Mq6CXIhcKnlPaBTSfiomMvVh8alDVjJ3tvERt0hw2XPT113cRuiw8COKkgNMV7Ee2AtOdYo9hbCrUQNbiDISepQ00PoXtgGCu"
+>
+</stripe-buy-button>
+    
+     <br>
+    <br>
+    <br>
+      
+    
+    
+    
+    </center>
+    
+      <div id="footer"></div>
+  </body>
+</html>
+
+    
